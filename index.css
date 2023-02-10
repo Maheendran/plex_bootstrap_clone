@@ -1,0 +1,330 @@
+    *{
+    padding: 0;
+    margin: 0;
+    }
+    body::-webkit-scrollbar{
+    width: 9px;
+    }
+    body::-webkit-scrollbar-thumb{
+    background-color: rgba(76, 77, 88, 0.831);
+    border-radius: 20px;
+    }
+    .main,.nav_input{
+    position: relative;
+    }
+    .navbar_sec{
+    position: absolute;
+    top: 0;
+    backdrop-filter: blur(5px);
+    }
+    .navbar_sec>img{
+    width: 60px;
+    }
+    .nav_btn{
+    border-radius: 10px;
+    background-color: orange;
+    font-weight: 700;
+    }
+    .nav_input i{
+    position: absolute;
+    left: 25px;
+    top: 5px;
+    color: grey;
+    }
+    .main{
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    background-image: url("https://www.plex.tv/wp-content/uploads/2023/01/hero-homepage-01-17-mobile.png");
+    background-position: center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+    .main h1{
+    color: white;
+    font-weight: 700;
+    }
+    .main p{
+    color: white;
+    }
+    .btn1{
+    border: none;
+    background-color: orange;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    }
+    .sub_head{
+    margin-top: 2rem;
+    font-size:2rem;
+    }
+    .sub_banner{
+    background-color: rgba(126, 126, 126, 0.869);
+    }
+    .flex_box{
+    width: 80%;
+    margin: auto;
+    height: 50vh;
+    display: flex;
+    overflow-y: hidden;
+    gap: 10px;
+    cursor: pointer;}
+    .flex_box img{
+    width: 100%;
+    height: 100%;
+    }
+    .flex_box::-webkit-scrollbar{
+    height: 7px;
+    }
+    .flex_box::-webkit-scrollbar-thumb{
+    background-color: rgb(235, 212, 95);
+    border-radius: 20px;
+    }
+    .banner_p{
+    font-size: 1.2rem;
+    }
+    .video_banner{
+    background: rgb(152,51,52);
+    background: linear-gradient(90deg, rgba(152,51,52,1) 55%, rgba(164,58,59,0.9529936974789917) 70%, rgba(250,122,53,1) 87%, rgba(255,213,0,1) 100%);
+    color: white;
+
+    }
+    .tv_screen{
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: hidden;
+    }
+    .tv_screen video{
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 99%;
+    position: absolute;
+    }
+    .btns_color{
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    background-color: rgb(255, 255, 255);
+    }
+    .small_grid_box{
+    background-color: rgba(151, 150, 150, 0.333);
+    }
+    .gredient_text{
+    background: rgb(72,87,245);
+    background: linear-gradient(90deg, rgba(72,87,245,1) 39%, rgba(255,80,0,1) 79%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+    .hide_box{
+    color: rgb(0, 0, 0);
+    background-color: rgba(128, 128, 128, 0.2);
+    }
+    .colors{
+    background-color: rgb(255, 157, 0);
+    color: white;
+    }
+    .yellow_box{
+    background-color: rgb(243, 183, 85);
+    }
+    .outer_detail{
+    position: relative;
+    overflow: hidden;
+    height: 50vh;
+    }
+    .outer_detail img{
+    width: 100%;
+    height: 100%;
+    }
+    .gredient{
+    width: 95%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.381);
+    position: absolute;
+    }
+    .inner_detail{
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% ,-50%);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    }
+    .footer_flexbox{
+    display: flex;
+    justify-content: space-between;
+    }
+    .footer_box{
+    color: white;
+    background-color: #494949;
+    }
+    .font_bold{
+    font-weight: 700;
+    line-height: 2rem;
+    }
+    .footer_box p{
+    font-size: 0.9rem;
+    color: rgb(145, 144, 144);
+    }
+    .footer_box i{
+    font-size: 1.3rem;
+    color: rgb(145, 144, 144);
+    }
+    .footer_box h6{
+    margin-top: 10px;
+    }
+    .img_scale{
+    transition: 0.5s ease-in-out;
+    }
+    .img_scale:hover{
+    transform: scale(1.1);
+
+    }
+    /*............... media queries start............ */
+    /* xs size */
+    @media screen and (max-width:576px) {  
+    .sub_head {
+    margin-top: 0.5rem;
+    font-size:1.3rem; }
+    .heading1{
+    border: 2px solid;
+    color: red;
+    background-color: rgb(114, 112, 112);
+    }
+    .btn1{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    }
+    .sub_banner1 h3{
+    font-size: 1.2rem;
+    }
+    .sub_banner1 p{
+    font-size: 1rem;
+    font-weight: 400;
+    }
+    .video_size{
+    width: 90%;
+    }
+    .video_banner_detail{
+    display: flex;
+    flex-direction: column-reverse;
+    }
+    .video_banner{
+    background: rgb(152,51,52);
+    background: linear-gradient(20deg, rgba(152,51,52,1) 55%, rgba(164,58,59,0.9529936974789917) 70%, rgba(250,122,53,1) 97%, rgba(255,213,0,1) 100%);
+    }
+    .h1_heading{
+    font-size: 2.2rem;
+    }
+    .banner_p{
+    font-size: 1.2rem;
+    }
+    .btns_color{
+    font-size: 0.6rem;
+    }
+    .text_centering{
+    margin: auto;
+    text-align: center;
+    }.colors{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.181) 0px 30px 60px -30px, rgba(10, 37, 64, 0.165) 0px -2px 6px 0px inset;
+    }
+    .outer_detail{
+    height: 30vh;
+    margin-bottom: 2rem;
+    }
+    .nav_input{
+    width: 50%;
+    font-size: 0.9rem;
+    }
+    }
+    /* sm size */
+    @media screen and (min-width:576px) and (max-width:768px) {
+
+    .video_size{
+    width: 90%;
+    }
+    .video_banner_detail{
+    display: flex;
+    flex-direction: column-reverse;
+    }
+    .video_banner{
+    background: rgb(152,51,52);
+    background: linear-gradient(30deg, rgba(152,51,52,1) 55%, rgba(164,58,59,0.9529936974789917) 70%, rgba(250,122,53,1) 97%, rgba(255,213,0,1) 100%);
+    }
+    .h1_heading{
+    font-size: 2.8rem;
+    }
+    .small_grid_box{
+    padding: 20px 0px 20px 0px;
+    }
+    .text_centering{
+    margin: auto;
+    text-align: center;
+    }
+    .colors{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.181) 0px 30px 60px -30px, rgba(10, 37, 64, 0.165) 0px -2px 6px 0px inset;
+    }
+    .outer_detail{
+    height: 50vh;
+    margin-bottom: 2rem;
+    }
+    }
+    /* md size */
+    @media screen and (min-width:768px) and (max-width:992px) {
+
+    .video_banner_detail h2{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    }
+    .video_size{
+    width: 80%;
+    }
+    .video_banner_detail{
+    display: flex;
+    flex-direction: column-reverse;
+    }
+    .video_banner{
+    background: rgb(152,51,52);
+    background: linear-gradient(80deg, rgba(152,51,52,1) 55%, rgba(164,58,59,0.9529936974789917) 70%, rgba(250,122,53,1) 97%, rgba(255,213,0,1) 100%);
+    }
+    .h1_heading{
+    font-size: 3rem;
+    }
+    .small_grid_box{
+    padding: 20px 0px 20px 0px;
+    }
+    .text_centering{
+    margin: auto;
+    text-align: center;
+    }
+    .colors{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.181) 0px 30px 60px -30px, rgba(10, 37, 64, 0.165) 0px -2px 6px 0px inset;
+    }
+    }
+    /* lg size */
+    @media screen and (min-width:992px) {
+    .video_banner_detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .video_banner_detail h2{
+    font-size: 2.4rem;
+    }
+    .h1_heading{
+    font-size: 3.6rem;
+    }
+    .small_grid_box{
+    padding: 25px 0px 25px 0px;
+    }
+
+    }
